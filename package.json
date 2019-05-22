@@ -1,0 +1,27 @@
+{
+    "name": "vue-corp-card",
+    "version": "1.0.1",
+    "description": "An Vue UI Card Component used for display Crop infos!",
+    "private": false,
+    "author": "xgqfrms",
+    "license": "MIT",
+    "keywords": [
+        "vue",
+        "card",
+        "ui",
+        "components",
+        "vue-corp-card"
+    ],
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/xgqfrms/vue-corp-card.git"
+    },
+    "bugs": {
+        "url": "https://github.com/xgqfrms/vue-corp-card/issues"
+    },
+    "homepage": "https://github.com/xgqfrms/vue-corp-card#readme"
+}
