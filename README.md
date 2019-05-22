@@ -27,3 +27,7 @@ $ yarn add -D bili rollup-plugin-vue vue-template-compiler
 // }
 
 ```
+
+## refs
+
+https://www.telerik.com/blogs/vuejs-how-to-build-your-first-package-publish-it-on-npm
