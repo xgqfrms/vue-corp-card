@@ -2,6 +2,7 @@
     <div
         v-if="isShowCorpCard"
         @click="AutoSkipToPage(`enterprise/special-topics`)"
+        @dblclick="AutoSkipToPage(`enterprise/special-topics`)"
         class="corp-card-container">
         <div
             v-if="corpShowHotFire"
@@ -82,21 +83,7 @@
         },
         methods: {
             AutoSkipToPage(hash =``) {
-                // let url = window.location.origin;
-                // let id = this.corpId;
-                if (!hash) {
-                    hash = `search`;
-                }
-                // Light.navigate(
-                //     `${url}/#/${hash}`,
-                //     {
-                //         id,
-                //     },
-                //     {
-                //         title: "",
-                //         replace: false,
-                //     },
-                // );
+                cosnole.log(`hash =`, hash);
             },
         },
         mounted() {
