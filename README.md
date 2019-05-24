@@ -9,6 +9,7 @@ $ yarn global add @vue/cli-service-global
 
 # uninstall cli
 $ yarn global remove @vue/cli
+$ yarn global remove @vue/cli-service-global
 
 ```
 
@@ -124,3 +125,26 @@ https://www.npmjs.com/package/vue-corp-card
 ## refs
 
 https://www.telerik.com/blogs/vuejs-how-to-build-your-first-package-publish-it-on-npm
+
+
+## bili
+
+> extractCSS
+
+```js
+
+module.exports = {
+    banner: true,
+    output: {
+        extractCSS: true,
+        // extractCSS: false,
+    },
+    plugins: {
+        vue: {
+            css: true
+        },
+    },
+};
+
+
+```

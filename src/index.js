@@ -13,10 +13,14 @@
  *
  */
 
-import CorpCard from "./corp-card.vue";
+import XyzButton from "./xyz-button.vue";
+// import CorpCard from "./corp-card.vue";
+// import * as PxtoRem from "./utils/px2rem";
+// PxtoRem();
 
 export default {
     install(Vue, options) {
-        Vue.component("crop-card", CorpCard);
+        Vue.component("xyz-button", XyzButton);
+        // Vue.component("crop-card", CorpCard);
     }
 };
