@@ -19,25 +19,11 @@ $ yarn add -D bili rollup-plugin-vue vue-template-compiler
 
 ```
 
-```js
-
-// "devDependencies": {
-//     "bili": "^3.4.2",
-//     "rollup-plugin-vue": "^4.6.1",
-//     "vue-template-compiler": "^2.5.22"
-// }
-
-```
 
 ## publish
 
 ```hs
-$ npm list l
-$ npm list --json
-
 $ npm whoami
-
-$ npm info
 
 $ npm adduser
 
@@ -63,6 +49,34 @@ Vue.use(CorpCard);
 
 ```
 
+> Vue Style
+
+```js
+
+<corp-card
+    :rounded="true">
+    CorpCard
+</corp-card>
+
+<corp-card
+    @click="AutoSkipToPage(`newsinfo/iframe`)">
+    click Button 1
+</corp-card>
+<!-- dblclick & mobile bug -->
+<corp-card
+    @dblclick="AutoSkipToPage(`newsinfo/iframe`)">
+    dblclick & mobile bug
+</corp-card>
+<!-- dblclick & components -->
+<corp-card
+    @dblclick.native="AutoSkipToPage(`newsinfo/iframe`)">
+    dblclick & components
+</corp-card>
+
+```
+
+> React Style
+
 ```js
 
 <!-- error -->
@@ -80,71 +94,15 @@ Vue.use(CorpCard);
 
 ```
 
-```js
-// events ???
-
-<nice-handsome-button
-    :rounded="true"
-    color="red"
-    size="large">
-    My Button
-</nice-handsome-button>
-
-
-<nice-handsome-button
-    @click="AutoSkipToPage(`newsinfo/iframe`)"
-    :rounded="true"
-    color="red"
-    size="large">
-    click Button 1
-</nice-handsome-button>
-<!-- dblclick & mobile bug -->
-<nice-handsome-button
-    @dblclick="AutoSkipToPage(`newsinfo/iframe`)"
-    :rounded="true"
-    color="red"
-    size="large">
-    dblclick Button 2
-</nice-handsome-button>
-<!-- dblclick & components -->
-<nice-handsome-button
-    @dblclick.native="AutoSkipToPage(`newsinfo/iframe`)"
-    :rounded="true"
-    color="red"
-    size="large">
-    dblclick Button 3
-</nice-handsome-button>
-
-```
-
-
 ## npm
 
 https://www.npmjs.com/package/vue-corp-card
+
+## bili
+
+https://bili.egoist.sh/#/recipes/vue-component
 
 ## refs
 
 https://www.telerik.com/blogs/vuejs-how-to-build-your-first-package-publish-it-on-npm
 
-
-## bili
-
-> extractCSS
-
-```js
-
-module.exports = {
-    banner: true,
-    output: {
-        extractCSS: true,
-        // extractCSS: false,
-    },
-    plugins: {
-        vue: {
-            css: true
-        },
-    },
-};
-
-
-```

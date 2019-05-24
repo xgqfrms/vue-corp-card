@@ -63,8 +63,7 @@
      * @created 2019-05-22
      *
      */
-    // import defaultImage from "./imgs/default.png";
-    let defaultImage = "./imgs/default.png";
+    import defaultImage from "./imgs/default.png";
     export default {
         name: "CorpCard",
         props: {
@@ -326,7 +325,8 @@ html{
     transform: translateX(0.03rem) translateY(-0.25rem);
 }
 .corp-card-text::after{
-    content: "🔥";
+    content: url("./imgs/emoji-fire.png");
+    /* content: "🔥"; */
     display: block;
     color: #fff;
     background: transparent;

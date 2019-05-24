@@ -1,6 +1,6 @@
 {
     "name": "vue-corp-card",
-    "version": "1.0.2",
+    "version": "1.0.4",
     "description": "An Vue UI Card Component used for display Crop infos!",
     "private": false,
     "author": "xgqfrms",
@@ -15,19 +15,12 @@
     "files": [
         "dist/*"
     ],
-    "main": "./dist/index.cjs.js",
+    "main": "./dist/index.min.js",
     "scripts": {
-        "start": "vue serve ./src/xyz-button.vue",
-        "build": "bili --name index --plugin vue --vue.css true",
-        "start1": "vue serve ./testing/app.vue",
-        "build2": "bili --name index --plugin vue --vue.css true",
-        "dev": "vue serve ./src/corp-card.vue",
-        "app": "bili --name index --plugin vue --vue.css false",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "bin": {
-        "dev": "dev",
-        "app": "app"
+        "start": "vue serve ./src/corp-card.vue",
+        "build": "bili --format cjs-min --no-map --plugin.vue.css true",
+        "bili-all": "bili \"src/index.js\" --format cjs-min --no-map--plugin.vue.css true",
+        "bili-default": "bili"
     },
     "repository": {
         "type": "git",

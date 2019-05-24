@@ -63,8 +63,7 @@
      * @created 2019-05-22
      *
      */
-    // import defaultImage from "./imgs/default.png";
-    let defaultImage = "./imgs/default.png";
+    import defaultImage from "./imgs/default.png";
     export default {
         name: "CorpCard",
         props: {
@@ -193,10 +192,10 @@
                     this.isShowCorpCard = true;
                 } else {
                     this.isShowCorpCard = false;
-                    // throw new Error(`CorpCard's corpObj cannot be empty!`);
+                    // throw new Error(`CorpCard 的 corpObj 属性不可为空!`);
                 }
             } catch (err) {
-                // console.error(`CorpCard error: \n`, err);
+                // console.error(`CorpCard 使用错误: \n`, err);
             }
         },
     };
@@ -252,6 +251,7 @@ html{
 }
 .corp-card-right-title-key{
     color:var(--highlight-color);
+    /* color:rgba(25,31,37,1); */
     font-weight: 600;
 }
 .corp-card-right-title-value{
