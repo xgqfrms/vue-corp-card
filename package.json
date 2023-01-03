@@ -32,7 +32,7 @@
     "homepage": "https://github.com/xgqfrms/vue-corp-card#readme",
     "devDependencies": {
         "bili": "^4.8.0",
-        "rollup-plugin-vue": "^5.0.0",
+        "rollup-plugin-vue": "^6.0.0",
         "vue-template-compiler": "^2.6.10"
     }
 }
